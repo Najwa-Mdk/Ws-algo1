@@ -1,0 +1,44 @@
+// The length of the sentence
+ALGORITHM sentense_length
+VAR
+    str : STRING := "write an algorithm that read a sentence."
+    Count : INTEGER := 0 ;
+BEGIN
+    FOR (i = 0 , i < str.length() ; i++) DO
+    if (str.char[i] !=' ') then
+        count ++ ;
+    END_if
+    END_FOR
+    write (count)
+END
+
+// The number of words in the sentence
+ALGORITHM word_number
+VAR
+ str : STRING := "write an algorithm that read a sentence."
+ Nbword : INTEGER :=1 ;
+BEGIN
+ FOR i < str.length
+    if (str[i] = " ") then 
+    Nbword = Nbword + 1 ;
+    END_if
+ END_FOR
+ write (Nbword)
+END
+
+// The number of vowels in the sentence
+ ALGORITHM Vowels
+ VAR 
+  Nbr : INTEGER ;
+  str : STRING ;
+ BEGIN
+  Nbr =0 ;
+  FOR i in str DO
+  if (str [i] = 'a' ││ str [i] = 'e' ││ str [i] = 'i' ││ str [i] = 'o' ││ str [i] = 'u' ) then
+  Nbr =+1 ;
+  END_if
+  END_FOR
+  write (Nbr)
+END
+
+
